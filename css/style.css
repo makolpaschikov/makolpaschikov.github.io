@@ -36,36 +36,23 @@ h1,h2,h3,h4,h5,h6 {
 /*=============*/
 
 .container {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-@media (max-width: 1700px) {
-  .container {
-    max-width: 1500px;
+@media (max-width: 675px) {
+  .about__row {
+    flex-direction: column;
   }
-}
-
-@media (max-width: 1400px) {
-  .container {
-    max-width: 1200px;
+  .skills__row {
+    flex-direction: column;
   }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
+  .skills__skill {
+    padding: 20px 0;
   }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767) {
-  .container {
-    max-width: none;
+  .portfolio__row {
+    flex-direction: column;
   }
 }
 
@@ -160,9 +147,6 @@ header {
   line-height: 24px;
 }
 
-.about__img {
-
-}
 .about__img img {
   width: 323px;
   height: 400px;
@@ -190,6 +174,8 @@ header {
 }
 
 .skills__title {
+  align-items: stretch;
+
   font-size: 26px;
   line-height: 26px;
   font-weight: 700;
