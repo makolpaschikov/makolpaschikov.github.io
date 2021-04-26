@@ -17,11 +17,20 @@
 					<div class="navbar__row">
 						<div class="navbar__logo">Maxim Kolpaschikov</div>
 						<div class="navbar__menu">
-							<nav><a href="#about">About</a></nav>
-							<nav><a href="#skills">Skills</a></nav>
-							<nav><a href="#portfolio">Portfolio</a></nav>
-							<nav><a href="#contact">Contact</a></nav>
+							<div class="burgered__menu">
+								<div class="burgered__ico"></div>
+								<div class="burgered__ico"></div>
+								<div class="burgered__ico"></div>
+								<div class="burgered__ico"></div>
+							</div>
+							<ul>
+								<li><a href="#about">About</a></li>
+								<li><a href="#skills">Skills</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
 						</div>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -34,7 +43,7 @@
 						<div class="about__me">
 							<div class="about__title">
 								<p>Hello, my name is</p>
-								<p>Maxim Kolpaschikov <span class="custom__dot">.</span></p>
+								<p>Maxim Kolpaschikov<span class="custom__dot">.</span></p>
 							</div>
 							<div class="about__text">
 								<p>I am a beginner backend java developer.</p>
@@ -52,20 +61,20 @@
 			<div class="skills">
 				<div class="container">
 					<div class="skills__row">
-						<div class="skills__skill">
+						<div class="skills__skill.first">
 							<div class="skills__title">
-								<p>Java and</p>
-								<p>spring<span class="custom__dot">.</span></p>
+								<p>Java and<br>
+								spring<span class="custom__dot">.</span></p>
 							</div>
 							<div class="skills__text">
 								I have a year of commercial development in java. 
-								I study spring framework and backend development on my own.
+								I am independently studying the Spring framework and have experience in developing RESTfull services.
 							</div>
 						</div>
 						<div class="skills__skill">
 							<div class="skills__title">
-								<p>Knowledge of</p>
-								<p>databases<span class="custom__dot">.</span></p>
+								<p>Knowledge of<br>
+								databases<span class="custom__dot">.</span></p>
 							</div>
 							<div class="skills__text">
 								I have completed an excellent database course at the university. 
@@ -74,18 +83,18 @@
 						</div>
 						<div class="skills__skill">
 							<div class="skills__title">
-								<p>Version control</p> 
-								<p>systems<span class="custom__dot">.</span></p>
+								<p>Version control<br>
+								systems<span class="custom__dot">.</span></p>
 							</div>
 							<div class="skills__text">
 								I have experience with VCS such as GitHub and BitBucket. 
 								I know what commit and pull request are and so on
 							</div>
 						</div>
-						<div class="skills__skill">
+						<div class="skills__skill.last">
 							<div class="skills__title">
-								<p>Website</p> 
-								<p>layout<span class="custom__dot">.</span></p>
+								<p>Website<br>
+								layout<span class="custom__dot">.</span></p>
 							</div>
 							<div class="skills__text">
 								I have basic skills in website layout using html and css.
@@ -104,7 +113,7 @@
 						</div>
 						<div class="portfolio__info">
 							<div class="portfolio__title">
-								Portfolio <span class="custom__dot">.</span>
+								Portfolio<span class="custom__dot">.</span>
 							</div>
 							<div class="portfolio__subtitle">
 								It's not big, but I tried over it
@@ -112,13 +121,13 @@
 							<div class="portfolio__text">
 								<p>
 									My projects can be viewed on 
-									<a href="https://github.com/makolpaschikov" target="_blank">GitHub</a>:
+									<a href="https://github.com/makolpaschikov" target="_blank">GitHub</a>. 
+									Here is a list of interesting projects in which I took part:
 									<ul>
-										<li class="portfolio__item">🞄 server written for a fictional pizzeria "No-cheese pizza";</li>
-										<li class="portfolio__item">🞄 server written to be able to blog;</li>
-										<li class="portfolio__item">🞄 server written in a hackathon for a medical charitable foundation;</li>
+										<li class="portfolio__item">🞄 REST server for the medical foundation for the hackathon;</li>
+										<li class="portfolio__item">🞄 server for abstract pizzeria "No-cheese pizza";</li>
 										<li class="portfolio__item">🞄 implementation of the game "Game of Life";</li>
-										<li class="portfolio__item">🞄 image pixelator.</li>
+										<li class="portfolio__item">🞄 application that compresses images (image pixelator).</li>
 									</ul> 
 								</p>
 							</div>
@@ -156,5 +165,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/menu.js"></script> 
 </body>
 </html>
